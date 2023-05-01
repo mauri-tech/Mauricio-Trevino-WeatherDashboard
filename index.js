@@ -10,11 +10,9 @@ const formatDate = () => {
 
   return `${date.getFullYear()}/${month.toString().padStart(2, '0')}/${day.toString().padStart(2, '0')}`;
 };
-
 // Initialize the dashboard
 const init = () => {
   const storedCities = JSON.parse(localStorage.getItem("cities"));
-
   if (storedCities !== null) {
     cities = storedCities;
   }
@@ -87,7 +85,7 @@ const getWeatherData = (cityName) => {
     const coordLon = response.coord.lon;
     const coordLat = response.coord.lat;
 
-    // Fetch and display UV index
+    // Fetch and display UV index in dashboard
     const uvQueryURL = `https://api.openweathermap.org/data/2.5/uvi?appid=${apiKey}&lat=${coordLat}&lon=${coordLon}`;
 
     $.ajax({
