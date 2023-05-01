@@ -1,7 +1,7 @@
 body {
   font-family: 'Inter', sans-serif;
-  background-image: linear-gradient(to bottom right, #0a0a0a, #333333);
-  color: #fff;
+  background-image: linear-gradient(to bottom right, #f7f7f7, #d4d4d4);
+  color: #333;
   margin: 0;
   padding: 0;
 }
@@ -10,33 +10,29 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  background-color: rgba(168, 168, 168, 0.95);
-  border-radius: 0px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.jumbotron-fluid {
-  background-image: linear-gradient(to bottom right, #000000, #000000);
-  border-radius: 5px;
-  padding: 20px 0;
-  color: #fff;
-  text-align: center;
-}
+
 
 h1 {
   font-weight: 700;
   font-size: 3rem;
-  text-shadow: 2px 2px #000;
+  color: rgb(0, 0, 0);
 }
 
 h3 {
   font-weight: 700;
+  color: #333;
 }
 
 .card {
   border: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  border-radius: 10px;
 }
 
 .card:hover {
@@ -45,34 +41,47 @@ h3 {
 
 #city-input {
   border-radius: 2px;
+  background-color: #f0f0f0;
+  border: none;
+  color: #333;
 }
 
 .bg-primary {
-  background-image: linear-gradient(to bottom right, #1c7ccf, #00a9ff);
+  background-image: linear-gradient(to bottom right, #007aff, #00c2ff);
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #fff;
 }
 
 .btn-outline-secondary {
-  border-color: #fff;
-  color: #fff;
+  border-color: #333;
+  color: #333;
   background-color: transparent;
+  border-radius: 10px;
 }
 
 .btn-outline-secondary:hover {
-  background-color: #fff;
-  color: #1c7ccf;
+  background-color: #333;
+  color: #fff;
 }
 
 .list-group-item {
   cursor: pointer;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #333;
 }
 
 .list-group-item:hover {
-  background-color: #fff;
-  color: #1c7ccf;
+  background-color: #007aff;
+  color: #fff;
 }
 
 #today-weather {
   padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .green {
@@ -96,8 +105,8 @@ h3 {
 }
 
 .col-3.m-2.bg-primary {
-  background-image: linear-gradient(to bottom right, #1c7ccf, #00a9ff) !important;
-  border-radius: 5px;
+  background-image: linear-gradient(to bottom right, #007aff, #00c2ff) !important;
+  border-radius: 10px;
   padding: 20px;
   color: #fff;
   margin: 10px;
@@ -116,6 +125,10 @@ h3 {
   .container {
     padding: 10px;
   }
+}
+
+.jumbotron {
+  background: linear-gradient(to bottom, #e2e2e2, #c9c9c9);
 }
 
 @media (max-width: 767.98px) {
